@@ -210,20 +210,19 @@
     <div class="post-info">
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2025-12-27</span>
-        <span><span class="icon-pencil"></span>167 words</span>
+        <span><span class="icon-pencil"></span>153 words</span>
         <span><span class="icon-clock"></span>1 min</span>
       </div>
       <h2 class="post-title"></h2>
       <article class="post-article">
-          @[TOC](RCC（复位与时钟控制） 的函数调用)
-一、开启 GPIOB 外设的时钟。
+          一、开启 GPIOB 外设的时钟。
 代码如下（示例）：
 
 1void RCC_APB2PeriphClockCmd(uint32_t RCC_APB2Periph, FunctionalState NewState);
 RCC_APB2Periph_GPIOB
   (1)  表示 GPIOB 外设GPIOB 挂载在 APB2 总线 上该宏本质上是一个位掩码，用于控制 APB2 外设时钟寄存器
 （2）ENABLE表示 使能（开启）若改为 DISABLE，则表示关闭该外设时钟给 GPIOB 模块供时钟，使 GPIOB 寄存器开始工作
-二、 总结
+二、 总结在 STM32 中：所有外设在使用前必须先开启时钟如果
       </article>
     </div>
   </div>
@@ -248,7 +247,7 @@ RCC_APB2Periph_GPIOB
       </div>
       <div>
         <span class="icon-brush"></span>
-        167
+        153
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
         00:01
